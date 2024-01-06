@@ -10,7 +10,7 @@
     --first-color-hover: rgb(40, 91, 212);
     --second-color: rgb(0, 201, 255);
     --third-color: rgb(192, 166, 49);
-    --first-shadow-color: rgba(0, 0, 0, 0.1);
+     --first-shadow-color: rgba(0, 0, 0, 0.1);
 }
 /* ----- BASE ----- */
 *{
@@ -316,14 +316,14 @@ h3{
     border-radius: 5px;
 }
 /* ----- PROJECTS BOX ----- */
-.project-container{
+.project-container , .project-container2 {
     display: flex;
     width: 100%;
     justify-content: space-between;
     gap: 20px;
     flex-wrap: wrap;
 }
-.project-box{
+.project-box, .project-box2 {
     position: relative;
     display: flex;
     justify-content: center;
@@ -336,16 +336,16 @@ h3{
     box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
     overflow: hidden;
 }
-.project-box>i{
+.project-box>i , .project-box2>i {
     font-size: 50px;
     color: #00B5E7;
     margin-bottom: 25px;
 }
-.project-box label{
+.project-box label ,  .project-box label{
     font-size: 15px;
     color: #777;
 }
-.project-box::after, .contact-info::after{
+.project-box::after, .project-box2::after, .contact-info::after{
     content: "";
     position: absolute;
     bottom: -100%;
@@ -562,10 +562,10 @@ footer{
     .about-info, .contact-info{
         width: 100%;
     }
-    .project-container{
+    .project-container , .project-container2{
         justify-content: center;
     }
-    .project-box{
+    .project-box , .project-box2 {
         width: 80%;
     }
 }
