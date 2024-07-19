@@ -296,6 +296,21 @@ h3{
 .about-btn button:hover{
     background: var(--first-color-hover);
 }
+
+
+
+.about-btn2 {
+    background: var(--first-color);
+    color: var(--color-white);
+    border-radius: 30px;
+    right: 0;
+    bottom: 0;
+}
+.about-btn2 button:hover{
+    background: var(--first-color-hover);
+}
+
+
 /* ----- ABOUT / SKILLS BOX ----- */
 .skills-box{
     margin: 10px;
